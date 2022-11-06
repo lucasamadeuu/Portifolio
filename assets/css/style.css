@@ -4,6 +4,10 @@
     font-family: Poppins;
 }
 
+:root {
+    --bg-primary: #2E82B0;
+}
+
 header {
     display: flex;
     padding: 2rem;
@@ -11,7 +15,21 @@ header {
     background-color: #2E82B0;
 }
 
-nav ul{
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-bars {
+    color: white;
+}
+
+.mobile {
+    display: none;
+}
+
+nav ul {
     display: flex;
     list-style-type: none;
     gap: 20px;
@@ -27,4 +45,21 @@ nav ul li a {
 nav ul li a:hover {
     color: #003350;
     transition: 0.3s;
+}
+
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        gap: 10px;
+        flex-direction: column;
+    }
 }
