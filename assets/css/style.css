@@ -5,14 +5,19 @@
 }
 
 :root {
-    --bg-primary: #2E82B0;
+    --bg-primary: #172c3c;
+    --text-main: #307fa1;
+    --base-color:#E8F1F2;
+    --text-secondary: #CD9560;
+    --text-grey: rgba(228, 228, 228, 0.8);
+    --text-white: #FFF;
 }
 
 header {
     display: flex;
-    padding: 2rem;
+    padding: 3rem 5rem;
     justify-content: space-between;
-    background-color: #2E82B0;
+    background-color: var(--bg-primary);
 }
 
 .nav-bar {
@@ -21,8 +26,12 @@ header {
     justify-content: space-between;
 }
 
+.nav-bar img {
+    width: 40px;
+}
+
 .fa-bars {
-    color: white;
+    color: var(--text-grey);
 }
 
 .mobile {
@@ -32,23 +41,47 @@ header {
 nav ul {
     display: flex;
     list-style-type: none;
-    gap: 20px;
+    gap: 30px;
     font-weight: 500;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-grey);
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #003350;
+    color: var(--text-white);
     transition: 0.3s;
+}
+
+main {
+    background-color: var(--bg-primary);
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.banner img {
+    width: 30px;
+}
+
+.banner h1 {
+    color: var(--text-main);
+}
+
+.banner p {
+    color: var(--text-white);
 }
 
 @media(max-width: 768px) {
     header {
+        padding: 2rem;
         flex-direction: column;
         gap: 30px;
     }
