@@ -6,6 +6,7 @@
 
 :root {
     --bg-primary: #142735;
+    --bg-secondary: #172d3d;
     --text-main: #307fa1;
     --text-secondary: #255f79;
     --base-color:#E8F1F2;
@@ -129,22 +130,38 @@ nav ul li a:hover {
     all: unset;
     color: var(--base-color);
     background-color: var(--text-main);
+    border: 0.5px solid var(--text-main);
     border-radius: 10px;
     padding: 1rem;
     width: 140px;
     height: 20px;
     display: flex;
-    align-items: center;
     justify-content: center;
     font-size: 14px;
     font-weight: 500;
+    gap: .5rem;
     cursor: pointer;
     transition: .2s;
 }
 
 .button:hover {
     background-color: var(--text-secondary);
+    border: 0.5px solid var(--text-secondary);
     transition: .2s;
+}
+
+.button-reverse{
+    background-color: var(--bg-secondary) !important;
+    border: 0.5px solid var(--text-main) !important;
+}
+
+.button-reverse:hover {
+    background-color: var(--text-main) !important;
+    border: 0.5px solid var(--text-main) !important;
+}
+
+.button-img {
+    width: 15% !important;
 }
 
 main {
@@ -165,7 +182,7 @@ main {
     width: 20rem;
 }
 
-.about-text {
+.text {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -179,9 +196,11 @@ main {
     justify-content: space-between;
 }
 
-.skills-container {
+.main-container {
     display: flex;
+    width: 100%;
     gap: 3rem;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -193,14 +212,14 @@ main {
     width: 140px;
     height: 140px;
     border-radius: 15px;
-    background-color: #172d3d;
+    background-color: var(--bg-secondary);
     transition: 0.2s;
     cursor: pointer;
     gap: 1.5rem;
     border-bottom: 5px solid #307fa1;
 }
 
-.skill:hover {
+.transition:hover {
     -moz-transform: scale(1.05);
 	-webkit-transform: scale(1.05);
 	transform: scale(1.05);
@@ -218,6 +237,37 @@ main {
     align-items: center;
     gap: 3rem;
     justify-content: space-between;
+}
+
+.project {
+    display: flex;
+    padding:2.5rem;
+    border-radius: 15px;
+    background-color: var(--bg-secondary);
+    transition: 0.2s;
+    cursor: pointer;
+    gap: 5rem;
+    border-bottom: 5px solid #307fa1;
+}
+
+.project-title p {
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.project img {
+    width: 30rem;
+}
+
+.project-container-text {
+    display: flex;
+    justify-content: center;
+}
+
+.project-link {
+    display: flex;
+    gap: 1.2rem;
 }
 
 @media(max-width: 768px) {
@@ -261,4 +311,18 @@ main {
     .skills-container {
         flex-direction: column;
     }
+
+    .project {
+        flex-direction: column;
+        gap: 1rem !important;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    .button-project, .button-reverse{
+        width: 100px !important;
+    }
+
 }

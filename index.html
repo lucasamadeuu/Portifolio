@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="assets/images/logo.svg">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -41,61 +41,145 @@
           <h1>Olá, eu sou o Lucas</h1>
           <p>Um desenvolvedor web em treinamento.</p>
         </div>
-        <a class="button" href="assets/file/currículo.pdf" download="LucasAmadeu_currículo">Download CV</a>
+        <a
+          class="button"
+          href="assets/file/currículo.pdf"
+          download="LucasAmadeu_currículo"
+          >Download CV</a
+        >
       </div>
     </section>
 
     <main>
       <section class="about">
         <div>
-          <img src="assets/images/eu.png" alt="lucas">
+          <img src="assets/images/eu.png" alt="lucas" />
         </div>
-        <div class="about-text">
+        <div class="text">
           <h2>Sobre mim</h2>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp; Sou fomardo em Técnico de Informática pela FIAP School, e foi desse curso que surgiu meu interesse pela área. Atualmente estou cursando Análise e Desenvolvimento de Sistemas na FIAP. Desenvolvo projetos envolvendo HTML, CSS, JavaScript e React. <br>&nbsp;&nbsp;&nbsp;&nbsp; Sou uma pessoa bem comunicativa, o que possibilita com que eu consiga me adaptar fácil em novos ambientes, amo desafios e sempre procuro me superar a cada dia.</p>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp; Sou fomardo em Técnico de Informática pela
+            FIAP School, e foi desse curso que surgiu meu interesse pela área.
+            Atualmente estou cursando Análise e Desenvolvimento de Sistemas na
+            FIAP. Desenvolvo projetos envolvendo HTML, CSS, JavaScript e React.
+            <br />&nbsp;&nbsp;&nbsp;&nbsp; Sou uma pessoa bem comunicativa, o
+            que possibilita com que eu consiga me adaptar fácil em novos
+            ambientes, amo desafios e sempre procuro me superar a cada dia.
+          </p>
         </div>
       </section>
       <section class="skills">
         <h2>Habilidades</h2>
-        <div class="skills-container">
-          <div>
-            <div class="skill">
-              <h3>HTML</h3>
-              <img src="assets/images/html.svg" alt="html">
-            </div>
+        <div class="main-container">
+          <div class="skill transition">
+            <h3>HTML</h3>
+            <img src="assets/images/html.svg" alt="html" />
+          </div>
+          <div class="skill transition">
+            <h3>CSS</h3>
+            <img src="assets/images/css.svg" alt="css" />
+          </div>
+          <div class="skill transition">
+            <h3>JavaScript</h3>
+            <img src="assets/images/js.svg" alt="js" />
+          </div>
+          <div class="skill transition">
+            <h3>React.JS</h3>
+            <img src="assets/images/react.svg" alt="react" />
           </div>
           <div>
-            <div class="skill">
-              <h3>CSS</h3>
-              <img src="assets/images/css.svg" alt="html">
-            </div>
-          </div>
-          <div>
-            <div class="skill">
-              <h3>JavaScript</h3>
-              <img src="assets/images/js.svg" alt="html">
-            </div>
-          </div>
-          <div>
-            <div class="skill">
-              <h3>React.JS</h3>
-              <img src="assets/images/react.svg" alt="html">
-            </div>
-          </div>
-          <div>
-            <div class="skill">
+            <div class="skill transition">
               <h3>Golang</h3>
-              <img src="assets/images/go.svg" alt="html">
+              <img src="assets/images/go.svg" alt="html" />
             </div>
           </div>
         </div>
       </section>
       <section class="projects">
         <h2>Projetos</h2>
+        <div class="main-container">
+          <div class="project">
+            <div>
+              <img src="assets/images/codify.svg" alt="codify" />
+            </div>
+            <div class="project-container-text text">
+              <div class="project-title">
+                <h2>Codify</h2>
+                <p>React | Node.Js</p>
+              </div>
+              <p>
+                A Codify é um projeto proposto pela IBM, que visa preparar
+                candidatos para o mercado de trabalho, fornecendo materiais,
+                exercícios e testes técnicos usados por empresas em seus
+                processos seletivos.
+              </p>
+              <div class="project-link">
+                <a class="button button-project" href="https://github.com/Codifyy-tech" target="_blank">
+                  <img class="button-img" src="assets/images/github.svg" alt="github"> Github
+                </a>
+                <a class="button button-reverse" href="https://codifyy.tech/" target="_blank">
+                  <img class="button-img" src="assets/images/launch.svg" alt="github"> Deploy
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="project">
+            <div>
+              <img src="assets/images/gym.svg" alt="codify" />
+            </div>
+            <div class="project-container-text text">
+              <div class="project-title">
+                <h2>A.I Gym</h2>
+                <p>React | Styled Components</p>
+              </div>
+              <p>
+                Seja bem-vindo a academia do momento! Na A.I Gym, você terá toda a infraestrutura e suporte necessário para o seu desenvolvimento.
+              </p>
+              <div class="project-link">
+                <a class="button button-project" href="https://github.com/lucasamadeuu/A.I-Gym" target="_blank">
+                  <img class="button-img" src="assets/images/github.svg" alt="github"> Github
+                </a>
+                <a class="button button-reverse" href="https://ai-gym.netlify.app/" target="_blank">
+                  <img class="button-img" src="assets/images/launch.svg" alt="github"> Deploy
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="project">
+            <div>
+              <img src="assets/images/ppt.svg" alt="codify" />
+            </div>
+            <div class="project-container-text text">
+              <div class="project-title">
+                <h2>Rock paper scissors</h2>
+                <p>HTML | CSS | JavaScript</p>
+              </div>
+              <p>
+                Esse é um jogo de pedra papel ou tesoura, onde você irá enfretar o algoritmo para poder 
+                conquistar a sua vitória, pense bem em suas decisões para derrota-lo.
+              </p>
+              <div class="project-link">
+                <a class="button button-project" href="https://github.com/lucasamadeuu/pedra-papel-tesoura" target="_blank">
+                  <img class="button-img" src="assets/images/github.svg" alt="github"> Github
+                </a>
+                <a class="button button-reverse" href="https://playful-tiramisu-7f5f9a.netlify.app/" target="_blank">
+                  <img class="button-img" src="assets/images/launch.svg" alt="github"> Deploy
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
-  <script src="https://kit.fontawesome.com/206c422e14.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/206c422e14.js"
+    crossorigin="anonymous"
+  ></script>
   <script src="assets/js/nav.js"></script>
   <script src="assets/js/scroll.js"></script>
 </html>
