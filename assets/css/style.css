@@ -188,7 +188,7 @@ main {
     gap: 1rem;
 }
 
-.skills {
+.container-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,10 +201,11 @@ main {
     width: 100%;
     gap: 3rem;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.skill {
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,16 +228,8 @@ main {
     transition: 0.2s;
 }
 
-.skill img{
+.content img{
     width: 40%;
-}
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    justify-content: space-between;
 }
 
 .project {
@@ -268,6 +261,28 @@ main {
 .project-link {
     display: flex;
     gap: 1.2rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s;
+    background-color: transparent !important;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+}
+
+.contact img {
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 @media(max-width: 768px) {
