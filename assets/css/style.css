@@ -35,6 +35,10 @@ h3 {
     color: var(--text-main);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-primary);
 }
@@ -175,6 +179,7 @@ main {
     display: flex;
     align-items: center;
     gap: 3rem;
+    padding-top: 10rem;
     justify-content: space-between;
 }
 
@@ -193,6 +198,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    padding-top: 10rem;
     justify-content: space-between;
 }
 
